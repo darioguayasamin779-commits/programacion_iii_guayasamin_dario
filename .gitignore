@@ -1,0 +1,191 @@
+# =========================================================
+# .gitignore para proyectos Node.js / React / NestJS / TypeScript
+# Los patrones sin "/" inicial aplican en cualquier carpeta o subcarpeta
+# (útil para monorepos: apps/*, packages/*, client/, server/, etc.)
+# =========================================================
+
+# ---------- Dependencias ----------
+**/node_modules/
+**/jspm_packages/
+**/bower_components/
+**/web_modules/
+.pnp
+.pnp.js
+.pnp.cjs
+.pnp.loader.mjs
+
+# Yarn Berry (mantiene plugins/releases si se usan)
+**/.yarn/*
+!**/.yarn/patches
+!**/.yarn/plugins
+!**/.yarn/releases
+!**/.yarn/sdks
+!**/.yarn/versions
+**/.yarn-integrity
+
+# pnpm
+**/.pnpm-store/
+
+# ---------- Builds / salidas de compilación ----------
+**/dist/
+**/build/
+**/out/
+**/lib-esm/
+**/.next/
+**/.nuxt/
+**/.output/
+**/.svelte-kit/
+**/.vercel/
+**/.netlify/
+**/storybook-static/
+**/.docusaurus/
+
+# TypeScript
+*.tsbuildinfo
+**/tsconfig.tsbuildinfo
+**/.tsbuildinfo
+
+# ---------- Cachés ----------
+**/.cache/
+**/.parcel-cache/
+**/.vite/
+**/.turbo/
+**/.nx/cache/
+**/.nx/workspace-data/
+**/.angular/
+**/.eslintcache
+**/.stylelintcache
+**/.prettiercache
+**/.npm/
+**/.rpt2_cache/
+**/.rts2_cache_cjs/
+**/.rts2_cache_es/
+**/.rts2_cache_umd/
+**/.webpack/
+**/.swc/
+**/.temp/
+**/.tmp/
+**/tmp/
+**/temp/
+
+# ---------- Tests / cobertura ----------
+**/coverage/
+**/.nyc_output/
+**/lib-cov/
+**/junit.xml
+**/test-results/
+**/playwright-report/
+**/blob-report/
+**/playwright/.cache/
+**/cypress/videos/
+**/cypress/screenshots/
+**/cypress/downloads/
+
+# ---------- Logs ----------
+**/logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Diagnóstico / runtime
+pids/
+*.pid
+*.seed
+*.pid.lock
+*.heapsnapshot
+*.cpuprofile
+
+# ---------- Variables de entorno / secretos ----------
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.sample
+!**/.env.template
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+**/secrets/
+**/.secrets/
+
+# ---------- NestJS / Backend ----------
+**/uploads/
+**/.serverless/
+**/.dynamodb/
+**/.fusebox/
+**/.webpack/
+# Bases de datos locales
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+# Docker (datos locales)
+**/docker-data/
+**/.docker-volumes/
+
+# ---------- React / Frontend ----------
+**/.expo/
+**/.expo-shared/
+**/web-build/
+# Archivos generados por herramientas
+**/.vite-inspect/
+**/stats.html
+**/bundle-report.html
+
+# ---------- Editores e IDEs ----------
+**/.vscode/*
+!**/.vscode/settings.json
+!**/.vscode/tasks.json
+!**/.vscode/launch.json
+!**/.vscode/extensions.json
+!**/.vscode/*.code-snippets
+**/.history/
+**/.idea/
+*.iml
+*.iws
+*.ipr
+**/.fleet/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.swo
+*~
+**/.project
+**/.classpath
+**/.settings/
+**/.c9/
+*.launch
+
+# ---------- Sistema operativo ----------
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.directory
+.Trash-*
+
+# ---------- Misceláneos ----------
+*.tgz
+*.zip
+*.bak
+*.orig
+*.rej
+.node_repl_history
+.vuepress/dist
+.grunt
+.lock-wscript
+
+# ---------- Lockfiles (descomenta SOLO si no quieres versionarlos) ----------
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
