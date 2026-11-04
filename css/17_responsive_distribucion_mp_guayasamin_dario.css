@@ -1,0 +1,201 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    background-color: #0B1020;
+    color: #E5E7EB;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Diseño base: Mobile First */
+
+
+.encabezado {
+    padding: 2rem 1rem;
+    background-color: #172033;
+    text-align: center;
+}
+
+
+.encabezado h1 {
+    font-size: 2rem;
+    color: #FACC15;
+}
+
+
+/* Menú */
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+
+
+    padding: 1rem;
+    background-color: #1E293B;
+}
+
+
+.menu a {
+    color: #FACC15;
+    font-weight: bold;
+}
+
+
+/* Distribución general: una columna en móvil */
+
+
+.distribucion {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+
+.principal,
+.lateral {
+    min-width: 0;
+}
+
+
+h2 {
+    color: #93C5FD;
+}
+
+
+/* Cursos */
+
+
+.cursos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+
+.curso {
+    padding: 1rem;
+    background-color: #172033;
+    border: 2px solid #64748B;
+    border-radius: 12px;
+}
+
+
+.curso h3 {
+    color: #FACC15;
+}
+
+
+/* Docentes */
+
+
+.docentes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.docente {
+    flex: 1;
+    padding: 1rem;
+    background-color: #1E293B;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/* Barra lateral */
+
+
+.lateral {
+    padding: 1.5rem;
+    background-color: #172033;
+    border-radius: 12px;
+}
+
+
+.estado {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #16A34A;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+footer {
+    padding: 1.5rem;
+    background-color: #172033;
+    text-align: center;
+}
+
+
+footer a {
+    color: #FACC15;
+}
+
+
+/* Tabletas: desde 600px */
+
+
+@media (min-width: 600px) {
+
+
+    .menu {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+
+    .cursos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+
+    .docentes {
+        flex-direction: row;
+    }
+
+
+}
+
+
+/* Computadoras: desde 1000px */
+
+
+@media (min-width: 1000px) {
+
+
+    .distribucion {
+        grid-template-columns: 3fr 1fr;
+    }
+
+
+    .cursos {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+
+    .encabezado h1 {
+        font-size: 3rem;
+    }
+
+
+}

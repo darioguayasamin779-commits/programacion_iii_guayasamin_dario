@@ -1,6 +1,6 @@
 # Programación III
 
-**Autor:** Darío Guayasamín
+**Autor:** Darío Guayasamín Saul Defas
 
 ## Descripción
 
