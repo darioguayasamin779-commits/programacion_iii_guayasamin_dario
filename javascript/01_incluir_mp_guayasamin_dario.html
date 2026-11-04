@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incluir JavaScript - IDIOMIA</title>
+    <script>
+        alert('Bienvenido a IDIOMIA, al inicio de pagina');
+        console.log('Saludo desde el inicio de pagina: Hello, Bonjour, Hallo')
+    </script>
+</head>
+<body>
+    <h1> Incluir JavaScript en HTML5 - Academia IDIOMIA</h1>
+    <h2>Modo Inline</h2>
+    <button onclick="alert('Hola en ingles se dice Hello')">traducir saludo</button>
+    <input type="text"
+        oninput="console.log(this.value)"
+        placeholder="Escribe una palabra en ingles">
+    <input type="text"
+        onchange="console.log('Palabra final guardada: ', this.value)"
+        placeholder="Escribe en frances y haz click afuera">
+    <input type="text"
+        onfocus="console.log(this.value)"
+        onblur="alert('Atencion saliste del campo de vocabulario')"
+        placeholder="haz click dentro y fuera">
+    <script src="01_incluir_mp_guayasamin_dario.js"></script>
+</body>
+</html>
