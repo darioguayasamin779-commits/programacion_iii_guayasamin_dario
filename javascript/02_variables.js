@@ -24,3 +24,11 @@ console.log(acompanante);
 console.log(energia);
 console.log(dimecion);
 console.log(tieneCombustible);
+
+var personaje='Jerry';
+console.log("Personaje ", personaje);
+personaje='Rick';
+console.log("Nuevo Personaje ", personaje);
+
+const protagonista='JERRY';
+console.log('protagonista',protagonista);
