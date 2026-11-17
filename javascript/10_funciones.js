@@ -10,7 +10,7 @@ abrirPortal();
 abrirPortal();
 
 
-function pilotoNave(Nombre) {
+function pilotoNave(nombre) {
     console.log("El piloto " + nombre + " esta a bordo de la nave. ");
 
 }     
