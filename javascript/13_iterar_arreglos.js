@@ -41,12 +41,12 @@ for(let mision of misiones){
     console.log("Total Cristales Recolectados por ", mision.piloto, "son : ", totalCristales);
 }
 
-let cristaleOriginales = [30,50,70,40];
+let cristalesOriginales = [30,50,70,40];
 let cristalesDobles = cristalesOriginales.map(elemento => {
     return elemento * 2;
 });
 console.log(cristalesDobles);
 let validos = cristalesOriginales.filter(cristal=>cristal>=50);
-let resultado = cristalesoriginales.reduce((acumulador, elemento)=> {
-    return aumulador+elemento;
+let resultado = cristalesOriginales.reduce((acumulador, elemento)=> {
+    return acumulador+elemento;
 });
